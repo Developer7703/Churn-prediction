@@ -57,3 +57,5 @@ It predicts whether a customer is likely to **churn (leave a service)** based on
                │  • Subscription encoder          │
                └──────────────────────────────────┘
 
+  https://v0-customer-churn-dashboard.vercel.app
+
