@@ -28,6 +28,9 @@ class PredictRequest(BaseModel):
     subscription_type: str
     completions: float
 
+@app.get("/")
+def home():
+    return {"message": "Churn Prediction API is running!"}
 
 @app.post("/predict")
 def predict(req: PredictRequest):
