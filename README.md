@@ -1,7 +1,7 @@
 # 🧠 Customer Churn Prediction (Machine Learning + FastAPI + Next.js)
 
 This project is a complete **end-to-end Customer Churn Prediction System** built using:
-
+Link-https://v0-customer-churn-dashboard.vercel.app
 - **Machine Learning (Random Forest)**
 - **FastAPI Backend**
 - **Next.js Frontend Dashboard**
@@ -57,5 +57,5 @@ It predicts whether a customer is likely to **churn (leave a service)** based on
                │  • Subscription encoder          │
                └──────────────────────────────────┘
 
-  https://v0-customer-churn-dashboard.vercel.app
+  
 
