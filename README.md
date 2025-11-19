@@ -22,31 +22,42 @@ The system predicts whether a customer is likely to churn based on their behavio
 - Input validation + preprocessing  
 - CORS enabled for frontend communication  
 
-🛠️ Tech Stack
-Machine Learning
-Python, Pandas, NumPy
-Scikit-learn
-RandomForestClassifier
-Pickle for model persistence
-Backend
-FastAPI
-Uvicorn
-CORS Middleware
-Frontend
-Next.js
-React
-Fetch API
-🎯 Use Cases
-SaaS churn prediction
-Telecom customer churn
-User retention strategy
-Identifying high-risk customers
-🌟 Project Highlights
-End-to-end ML pipeline
-Real-time REST API predictions
-Deployed dashboard interface
-Separate model + encoder pipeline
-Lightweight, modular & scalable structure
+## 🛠️ Tech Stack
+
+### **Machine Learning**
+- Python  
+- Pandas, NumPy  
+- Scikit-learn  
+- RandomForestClassifier  
+- Pickle for model persistence  
+
+### **Backend**
+- FastAPI  
+- Uvicorn  
+- CORS Middleware  
+
+### **Frontend**
+- Next.js  
+- React  
+- Fetch API  
+
+---
+
+## 🎯 Use Cases
+- SaaS churn prediction  
+- Telecom customer churn  
+- User retention strategy  
+- Identifying high-risk customers  
+
+---
+
+## 🌟 Project Highlights
+- End-to-end ML pipeline  
+- Real-time REST API predictions  
+- Deployed dashboard interface  
+- Separate model + encoder pipeline  
+- Lightweight, modular & scalable structure  
+
 
                  ┌──────────────────────────┐
                  │        Frontend          │
