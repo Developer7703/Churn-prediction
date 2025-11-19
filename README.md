@@ -21,12 +21,6 @@ The system predicts whether a customer is likely to churn based on their behavio
 - POST API endpoint: `/predict`  
 - Input validation + preprocessing  
 - CORS enabled for frontend communication  
-- Returns:
-```json
-{
-  "churn_prediction": 0,
-  "churn_probability": 0.21
-}
 
 🛠️ Tech Stack
 Machine Learning
