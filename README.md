@@ -1,35 +1,62 @@
-Customer Churn Prediction (Machine Learning + FastAPI + Next.js)
+# Customer Churn Prediction System (Machine Learning + FastAPI + Next.js)
+🔗 **Live Demo:** https://v0-customer-churn-dashboard.vercel.app
 
-This project is a complete end-to-end Customer Churn Prediction System built using: Link-https://v0-customer-churn-dashboard.vercel.app
+A complete end-to-end **Customer Churn Prediction System** integrating Machine Learning, a FastAPI backend, and a Next.js dashboard.  
+The system predicts whether a customer is likely to churn based on their behavior and subscription patterns.
 
-Machine Learning (Random Forest)
-FastAPI Backend
-Next.js Frontend Dashboard
-Pickled Encoders & Model Pipeline
-Real-time Churn Prediction API
-It predicts whether a customer is likely to churn (leave a service) based on their usage behavior and subscription details.
+---
 
-🚀 Features
+## 🚀 Overview
 
-🔍 Machine Learning
+### ✅ Machine Learning (Random Forest + Encoders)
+- Random Forest classifier trained on a structured churn dataset  
+- Label encoding for gender & subscription type  
+- Feature engineering and preprocessing  
+- Predicts:
+  - **Churn Class** (0 = No, 1 = Yes)
+  - **Churn Probability** (0–1)
 
-Random Forest model trained on processed customer dataset
-Feature engineering + label encoding
-Predicts churn (0 or 1) and probability
-⚡ FastAPI Backend
-
-Loads ML model + encoders (.pkl)
-Clean REST API endpoint /predict
-CORS enabled for frontend
-Returns:
+### ⚡ FastAPI Backend
+- Loads pickled ML model & encoders  
+- POST API endpoint: `/predict`  
+- Input validation + preprocessing  
+- CORS enabled for frontend communication  
+- Returns:
+```json
 {
   "churn_prediction": 0,
   "churn_probability": 0.21
 }
 
+🛠️ Tech Stack
+Machine Learning
+Python, Pandas, NumPy
+Scikit-learn
+RandomForestClassifier
+Pickle for model persistence
+Backend
+FastAPI
+Uvicorn
+CORS Middleware
+Frontend
+Next.js
+React
+Fetch API
+🎯 Use Cases
+SaaS churn prediction
+Telecom customer churn
+User retention strategy
+Identifying high-risk customers
+🌟 Project Highlights
+End-to-end ML pipeline
+Real-time REST API predictions
+Deployed dashboard interface
+Separate model + encoder pipeline
+Lightweight, modular & scalable structure
+
                  ┌──────────────────────────┐
                  │        Frontend          │
-                 │        (Next.js)         │
+                 │         Next.js          │
                  │                          │
                  │ • User fills form        │
                  │ • Sends JSON request     │
@@ -38,18 +65,18 @@ Returns:
                              ▼
                ┌──────────────────────────────┐
                │           FastAPI            │
-               │       (Backend API)          │
+               │       Backend Service        │
                │                              │
                │ • Receives /predict request  │
-               │ • Normalizes inputs          │
+               │ • Validates & normalizes     │
                │ • Applies encoders           │
                │ • Loads model & predicts     │
                └───────────┬──────────────────┘
                              │
                              ▼
              ┌──────────────────────────────────┐
-             │         ML Model (.pkl)          │
+             │     ML Model & Encoders (.pkl)   │
              │  • Random Forest Classifier      │
-             │  • Gender encoder                │
-             │  • Subscription encoder          │
+             │  • Gender label encoder          │
+             │  • Subscription label encoder    │
              └──────────────────────────────────┘
